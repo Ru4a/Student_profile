@@ -1,0 +1,24 @@
+<!-- student_search.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Search</title>
+</head>
+<body>
+    <h1>Student Information</h1>
+    <p><strong>Name:</strong> {{ studentInfo.name }}</p>
+    <p><strong>Grade:</strong> {{ studentInfo.grade }}</p>
+
+    {% if student %}
+        <h2>Search result : </h2>
+        <p>Name : {{studentInfo.name}}</p>
+        <p>Grade : {{studentInfo.grade}}</p>
+    {% else %}
+        <p>No search results</p>
+    {% endif %}
+</body>
+</html>
+
+
+<!--템플릿에서 하드코딩이란 정적인 값이나 텍스트를 직접 템플릿 파일에 작성하는 것을 의미-->
+<!--템플릿 파일 내에 고정된 값을 직접 넣는 것을 말한다.-->
